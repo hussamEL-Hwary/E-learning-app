@@ -16,3 +16,7 @@ class CourseAdmin(admin.ModelAdmin):
     search_fields = ['title', 'overview']
     prepopulated_fields = {'slug': ('title',)}
     inlines = [ModuleInline]
+
+@admin.register(Content)
+class ContentAdmin(admin.ModelAdmin):
+    list_display = ['content_type', 'order']
