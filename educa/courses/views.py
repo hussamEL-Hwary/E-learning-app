@@ -15,6 +15,7 @@ from django.forms.models import modelform_factory
 from django.apps import apps
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 from django.db.models import Count
+from django.views.generic.detail import DetailView
 
 
 class OwnerMixin(object):
@@ -187,3 +188,8 @@ class CourseListView(TemplateResponseMixin, View):
         return self.render_to_response({'subjects': subjects,
                                         'subject': subject,
                                         'courses': courses})
+
+class CourseDetailView(DetailView):
+    model = Course
+    template_name = 'course/detail.html'
+    
