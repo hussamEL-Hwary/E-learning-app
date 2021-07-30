@@ -20,3 +20,6 @@ class CourseAdmin(admin.ModelAdmin):
 @admin.register(Content)
 class ContentAdmin(admin.ModelAdmin):
     list_display = ['content_type', 'order']
+
+# use memcache admin index site
+admin.site.index_template = 'memcache_status/admin_index.html'
