@@ -33,6 +33,14 @@ LOGIN_REDIRECT_URL = reverse_lazy('student_course_list')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+
+# django-rest settings
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,6 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'embed_video',
     'memcache_status',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -96,6 +105,7 @@ CACHES = {
         'LOCATION': '127.0.0.1:11211',
     }
 }
+
 
 
 # Password validation
