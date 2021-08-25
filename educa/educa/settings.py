@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 LOGIN_REDIRECT_URL = reverse_lazy('student_course_list')
 
+ASGI_APPLICATION = 'educa.routing.application'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
@@ -55,6 +57,8 @@ INSTALLED_APPS = [
     'embed_video',
     'memcache_status',
     'rest_framework',
+    'chat',
+    'channels',
 ]
 
 MIDDLEWARE = [
