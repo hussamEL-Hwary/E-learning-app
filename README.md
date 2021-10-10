@@ -1,6 +1,12 @@
 ## E-Learning App
 This app is an online learning platform helps create courses and content, let students to register in courses and chat with each other.
 
+### APP features
+- Students can create accounts and enroll in courses.
+- Course creators can create courses in diffiernt categories
+- Students can chat with each other
+
+
 ### Installation
 1. Colne the project repository.
 ```bash 
