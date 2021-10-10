@@ -5,7 +5,8 @@ This app is an online learning platform helps create courses and content, let st
 - Students can create accounts and enroll in courses.
 - Course creators can create courses in diffiernt categories
 - Students can chat with each other
-
+- Users can orders courses and contents
+- course creators can create any type of content(text, image, video and file)
 
 ### Installation
 1. Colne the project repository.
